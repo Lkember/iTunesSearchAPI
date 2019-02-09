@@ -70,7 +70,7 @@ class ArtistViewController: UIViewController, UITableViewDelegate, UITableViewDa
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let dvc = segue.destination as? AlbumViewController {
-            if let cell = sender as? AlbumTableViewCell {
+            if let _ = sender as? AlbumTableViewCell {
                 if let index = albumTableView.indexPathForSelectedRow {
                     dvc.album = albums[index.row]
                 }
