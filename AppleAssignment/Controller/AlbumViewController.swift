@@ -31,10 +31,11 @@ class AlbumViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     override func viewWillAppear(_ animated: Bool) {
         if (song != nil) {
+            title = song!.artistLabel
+            
             albumCover.image = song!.albumCover
             albumNameLabel.text = song!.albumLabel
-            releaseYearLabel.text = song!.releaseYear
-            title = song!.artistLabel
+            releaseYearLabel.text = "Released: \(song!.releaseYear ?? "Unknown")"
             
             DispatchQueue.global().async {
                 SearchHelperService.service.lookupSongsForAlbumID(self.song!.albumID!) { songs in

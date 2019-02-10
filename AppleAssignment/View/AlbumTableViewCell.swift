@@ -34,7 +34,7 @@ class AlbumTableViewCell: UITableViewCell {
         albumCover.layer.masksToBounds = true
         
         if (album.releaseDate != 0) {
-            releaseYear.text = "\(album.releaseDate)"
+            releaseYear.text = "Released: \(album.releaseDate)"
         }
         else {
             releaseYear.isHidden = true

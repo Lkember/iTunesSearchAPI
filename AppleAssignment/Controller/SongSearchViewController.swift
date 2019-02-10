@@ -128,10 +128,12 @@ class SongSearchViewController: UIViewController, UITableViewDelegate, UITableVi
     
     @objc func updateCell(_ sender: Notification) {
         DispatchQueue.main.async {
-            if let paths = self.songTableView.indexPathsForVisibleRows {
-                for i in 0..<paths.count {
-                    if self.songs[paths[i].row] == sender.object as! Song {
-                        self.songTableView.reloadRows(at: [paths[i]], with: .fade)
+            if let song = sender.object as? Song {
+                if let paths = self.songTableView.indexPathsForVisibleRows {
+                    for i in 0..<paths.count {
+                        if self.songs[paths[i].row] == song {
+                            self.songTableView.reloadRows(at: [paths[i]], with: .fade)
+                        }
                     }
                 }
             }
