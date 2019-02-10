@@ -20,6 +20,12 @@ class ArtistViewController: UIViewController, UITableViewDelegate, UITableViewDa
         // Do any additional setup after loading the view.
         albumTableView.delegate = self
         albumTableView.dataSource = self
+        
+        navigationController?.navigationBar.layer.masksToBounds = false
+        navigationController?.navigationBar.layer.shadowColor = UIColor.lightGray.cgColor
+        navigationController?.navigationBar.layer.shadowOpacity = 0.75
+        navigationController?.navigationBar.layer.shadowOffset = CGSize(width: 0, height: 2.0)
+        navigationController?.navigationBar.layer.shadowRadius = 2
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -50,17 +56,19 @@ class ArtistViewController: UIViewController, UITableViewDelegate, UITableViewDa
         return cell
     }
     
-    @objc func updateCell(_ sender: Any) {
-        if let album = sender as? Album {
-            for i in 0..<albums.count {
-                if (albums[i] == album) {
-                    let index = IndexPath.init(row: i, section: 0)
-                    albumTableView.reloadRows(at: [index], with: .fade)
+    @objc func updateCell(_ sender: Notification) {
+        DispatchQueue.main.async {
+            if let album = sender.object as? Album {
+                if let paths = self.albumTableView.indexPathsForVisibleRows {
+                    for path in paths {
+                        if (self.albums[path.row] == album) {
+                            self.albumTableView.reloadRows(at: [path], with: .fade)
+                            return
+                        }
+                    }
                 }
             }
-        }
-        else {
-            DispatchQueue.main.async {
+            else {
                 self.albumTableView.reloadData()
             }
         }
@@ -77,6 +85,5 @@ class ArtistViewController: UIViewController, UITableViewDelegate, UITableViewDa
             }
         }
     }
- 
 
 }
