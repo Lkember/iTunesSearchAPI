@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ymP-dN-sYJ">
-                                <rect key="frame" x="16" y="204" width="382" height="642"/>
+                                <rect key="frame" x="16" y="196" width="382" height="650"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="gray" indentationWidth="10" reuseIdentifier="SongInfoCell" rowHeight="91" id="6lU-9v-2yK" customClass="SongTableViewCell" customModule="AppleAssignment" customModuleProvider="target">
@@ -115,12 +115,12 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="S0G-BF-cer" secondAttribute="trailing" constant="16" id="Foc-v7-WWV"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ymP-dN-sYJ" secondAttribute="trailing" constant="16" id="RmQ-xX-jH9"/>
                             <constraint firstItem="S0G-BF-cer" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="ezM-Io-uVU"/>
-                            <constraint firstItem="ymP-dN-sYJ" firstAttribute="top" secondItem="RTy-AK-8hg" secondAttribute="bottom" constant="8" id="mkm-fQ-lFC"/>
+                            <constraint firstItem="ymP-dN-sYJ" firstAttribute="top" secondItem="RTy-AK-8hg" secondAttribute="bottom" id="mkm-fQ-lFC"/>
                             <constraint firstItem="S0G-BF-cer" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qcT-8O-m8c"/>
                             <constraint firstItem="RTy-AK-8hg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="qd2-km-8bK"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ymP-dN-sYJ" secondAttribute="bottom" constant="16" id="qgj-a2-Uc8"/>
                             <constraint firstItem="RTy-AK-8hg" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="qsZ-J9-Qbb"/>
-                            <constraint firstItem="ymP-dN-sYJ" firstAttribute="top" secondItem="RTy-AK-8hg" secondAttribute="bottom" constant="8" id="zgF-uM-s4h"/>
+                            <constraint firstItem="ymP-dN-sYJ" firstAttribute="top" secondItem="RTy-AK-8hg" secondAttribute="bottom" id="zgF-uM-s4h"/>
                             <constraint firstItem="RTy-AK-8hg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="zyg-Cd-2Cn"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -147,7 +147,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="CeR-K6-2u5">
-                                <rect key="frame" x="14" y="154" width="386" height="708"/>
+                                <rect key="frame" x="14" y="140" width="386" height="722"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="AlbumCell" rowHeight="138" id="rwU-lG-de4" customClass="AlbumTableViewCell" customModule="AppleAssignment" customModuleProvider="target">
@@ -213,7 +213,7 @@
                         <constraints>
                             <constraint firstItem="CeR-K6-2u5" firstAttribute="bottom" secondItem="shO-ZG-Hhr" secondAttribute="bottom" id="7HS-On-ENI"/>
                             <constraint firstItem="CeR-K6-2u5" firstAttribute="bottom" secondItem="shO-ZG-Hhr" secondAttribute="bottom" id="9BL-FV-ft6"/>
-                            <constraint firstItem="CeR-K6-2u5" firstAttribute="top" secondItem="shO-ZG-Hhr" secondAttribute="top" constant="14" id="j6G-PC-b47"/>
+                            <constraint firstItem="CeR-K6-2u5" firstAttribute="top" secondItem="shO-ZG-Hhr" secondAttribute="top" id="j6G-PC-b47"/>
                             <constraint firstItem="CeR-K6-2u5" firstAttribute="leading" secondItem="shO-ZG-Hhr" secondAttribute="leading" constant="14" id="nXT-c4-XfV"/>
                             <constraint firstItem="shO-ZG-Hhr" firstAttribute="trailing" secondItem="CeR-K6-2u5" secondAttribute="trailing" constant="14" id="wpG-hO-onh"/>
                         </constraints>
@@ -237,26 +237,26 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8TS-Xs-yPb">
-                                <rect key="frame" x="8" y="148" width="150" height="150"/>
+                                <rect key="frame" x="8" y="96" width="150" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="Iig-1L-cmE"/>
                                     <constraint firstAttribute="width" constant="150" id="rs6-3G-tGb"/>
                                 </constraints>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Album Name" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="vqA-Vf-2Jn">
-                                <rect key="frame" x="166" y="148" width="240" height="121"/>
+                                <rect key="frame" x="166" y="96" width="240" height="121"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Release Year" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g2i-ox-lm9">
-                                <rect key="frame" x="166" y="277" width="240" height="21"/>
+                                <rect key="frame" x="166" y="225" width="240" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="u1V-kB-dl0">
-                                <rect key="frame" x="8" y="306" width="398" height="556"/>
+                                <rect key="frame" x="8" y="254" width="398" height="608"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="AlbumSongCell" rowHeight="70" id="wus-iN-u33" customClass="AlbumSongTableViewCell" customModule="AppleAssignment" customModuleProvider="target">
@@ -330,7 +330,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="aK3-qe-2GG"/>
                     </view>
-                    <navigationItem key="navigationItem" id="3Dq-gJ-w6w"/>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="3Dq-gJ-w6w"/>
                     <connections>
                         <outlet property="albumCover" destination="8TS-Xs-yPb" id="bdf-qP-4u8"/>
                         <outlet property="albumNameLabel" destination="vqA-Vf-2Jn" id="gVV-2P-O5d"/>

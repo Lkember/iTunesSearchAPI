@@ -24,6 +24,9 @@ class AlbumViewController: UIViewController, UITableViewDelegate, UITableViewDat
         // Do any additional setup after loading the view.
         songTableView.delegate = self
         songTableView.dataSource = self
+        
+        albumCover.layer.cornerRadius = 5
+        albumCover.layer.masksToBounds = true
     }
     
     override func viewWillAppear(_ animated: Bool) {
